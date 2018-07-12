@@ -24,6 +24,7 @@ readAndWriteFiles = do
   let from_files = (lines from_path_file)
   let to_files = (lines to_path_file)
 
+  -- map removeFileName to_files
   -- mapM_ putStrLn to_files
   -- createDirWalk to_files
 
