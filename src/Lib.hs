@@ -1,14 +1,12 @@
 module Lib
-    ( someFunc, readData, readAndWriteFiles
+    ( readAndWriteFiles
     ) where
-
 
 import System.Directory
 import Control.Monad
 import Data.List
 import Data.List.Split
 import GHC.IO.Encoding
-
 
 
 readAndWriteFiles :: IO ()
