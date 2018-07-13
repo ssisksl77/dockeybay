@@ -19,9 +19,9 @@ readAndWriteFiles = do
   let to_files = (lines to_path_file)
   -- mapM_ putStrLn  to_files
   mapM_ (createDirectoryIfMissing True) (map removeFileName to_files)
-
+  -- sequence_ $ zipWith copyFile (lines from_path_file) (lines to_path_file)s
   zipWithM_ copyFile from_files to_files
-  -- sequence_ $ zipWith copyFile (lines from_path_file) (lines to_path_file)
+
 
 readData :: String -> IO String
 readData a = do
