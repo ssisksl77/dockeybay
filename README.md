@@ -10,19 +10,15 @@ dockeybay is a tiny project to convey multiple files and folders.
 
 이 둘은 두개의 파일을 읽어서 동시에 한줄씩 읽어서 옮겨놓는다고 생각하면 된다. 
 예)
-<code>
+```
 from_path.txt
-===
 PATH/a.txt
 PATH/b.exe
-===
 
 to_path.txt
-===
 NEW_PATH/aa.txt
 NEW_PATH/bb.exe
-===
-</code>
+```
 이렇게 만든다면 각각 한줄씩 읽어서 복사되는 것이다.
 
 ## how to get executable
